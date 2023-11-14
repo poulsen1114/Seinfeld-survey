@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="eng">
+<html>
+  <head>
+    <meta charset=charset="UTF-8">
+    <title>Seinfeld Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Seinfeld Survey</h1>
+    <p id="description">Please fill out this form so we can see how much you love the greatest television show of all time</p>
+    <form method="post" id="survey-form">
+    <fieldset>
+      <legend>Details</legend>
+      <label id="name-label" for="name">Name <input id="name" name="name" type="text" placeholder="Name" required /></label>
+      <label id="email-label" for="email">Email <input id="email" name="email" type="email" placeholder="Email" required /></label>
+      <label id="number-label" for="number">Favorite Season <input id="number" name="number" type="number" min="1" max="9" placeholder="1-9" required /></label>
+      <label for="dropdown">Do you love Seinfeld?
+        <select id="dropdown" name="dropdown">
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+      </label>
+    </fieldset>
+    <fieldset>
+        <legend>Favorite Characters</legend>
+      <label for="character-jerry"><input id="character-jerry" type="radio" name="character" class="inline" value="jerry" checked /> Jerry Seinfeld</label>
+      <label for="character-george"><input id="character-george" type="radio" name="character" class="inline" value="george"/> George Costanza</label>
+      <label for="character-elaine"><input id="character-elaine" type="radio" name="character" class="inline" value="elaine"/> Elaine Benes</label>
+      <label for="character-cosmo"><input id="character-cosmo" type="radio" name="character" class="inline" value="cosmo"/> Cosmo Kramer</label>
+      <label for="character-newman"><input id="character-newman" type="radio" name="character" class="inline" value="newman"/> Newman</label>
+    </fieldset>
+     <fieldset>
+        <legend>Wanna watch an episode?</legend>
+      <label for="giddyup"><input id="giddy-up" type="checkbox" name="episode" class="inline" value="giddy-up" /> Giddy up!</label>
+      <label for="excited"><input id="excited" type="checkbox" name="episode" class="inline" value="excited"/> I'm excited</label>
+      <label for="quote">Write your favorite quote
+        <textarea area id="quote" name="quote" rows="3" cols="30" placeholder="Serenity Now!"></textarea>
+      </label>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit" />    
+    </form> 
+  </body>
+  <footer></footer>
+</html>
